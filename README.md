@@ -45,27 +45,44 @@ This is naturally an expensive function, so try it on small pdfs with a few page
 
 ## How it works 
 We first convert the PDF to a png image, and then traverse the document vertically to extract the sentences. For example, in the PDF above, the first sentence we'd get is 
+
 <img src="https://github.com/ltrujello/PDF_Word_Extraction/blob/main/example_pngs/sentence_0_1.png"/>
 
 
 So if one just needs to extract the pixels representing sentences, this does that too. 
 
 We then traverse each sentence horizontally to extract the letters. For example, the code identifies the following images as words in the sentence above:
+
 <img src="https://github.com/ltrujello/PDF_Word_Extraction/blob/main/example_pngs/words/word_0_1_0.png"/>
+
 <img src="https://github.com/ltrujello/PDF_Word_Extraction/blob/main/example_pngs/words/word_0_1_1.png"/>
+
 <img src="https://github.com/ltrujello/PDF_Word_Extraction/blob/main/example_pngs/words/word_0_1_2.png"/>
+
 <img src="https://github.com/ltrujello/PDF_Word_Extraction/blob/main/example_pngs/words/word_0_1_3.png"/>
+
 <img src="https://github.com/ltrujello/PDF_Word_Extraction/blob/main/example_pngs/words/word_0_1_4.png"/>
+
 <img src="https://github.com/ltrujello/PDF_Word_Extraction/blob/main/example_pngs/words/word_0_1_5.png"/>
+
 <img src="https://github.com/ltrujello/PDF_Word_Extraction/blob/main/example_pngs/words/word_0_1_6.png"/>
+
 <img src="https://github.com/ltrujello/PDF_Word_Extraction/blob/main/example_pngs/words/word_0_1_7.png"/>
+
 <img src="https://github.com/ltrujello/PDF_Word_Extraction/blob/main/example_pngs/words/word_0_1_8.png"/>
+
 <img src="https://github.com/ltrujello/PDF_Word_Extraction/blob/main/example_pngs/words/word_0_1_9.png"/>
+
 <img src="https://github.com/ltrujello/PDF_Word_Extraction/blob/main/example_pngs/words/word_0_1_10.png"/>
+
 <img src="https://github.com/ltrujello/PDF_Word_Extraction/blob/main/example_pngs/words/word_0_1_11.png"/>
+
 <img src="https://github.com/ltrujello/PDF_Word_Extraction/blob/main/example_pngs/words/word_0_1_12.png"/>
+
 <img src="https://github.com/ltrujello/PDF_Word_Extraction/blob/main/example_pngs/words/word_0_1_13.png"/>
+
 <img src="https://github.com/ltrujello/PDF_Word_Extraction/blob/main/example_pngs/words/word_0_1_14.png"/>
+
 <img src="https://github.com/ltrujello/PDF_Word_Extraction/blob/main/example_pngs/words/word_0_1_15.png"/>
 
 The main idea is that a letter is generally a set of "connected islands" of pixels; when you write down any kind of letter, there exists neighborhoods of pixels whose pairwise dot products, when we filter out whitespace, are nonzero. It doesn't matter if it's a capital A or the letter i. The pairwise dot products become zero when we've encountered some white space, indicating that we're done writing down the letter. Thus it turns out it's easy to use dot products of ones and zeros to detect when we've found a letter. 
