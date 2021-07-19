@@ -1,0 +1,115 @@
+\documentclass[12pt,letterpaper]{book}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath, amsfonts, amssymb, amsthm, thmtools}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage[dvipsnames]{xcolor} % Colors, use dvipsnames for more color options
+\usepackage{framed} % Fancy leftbar
+\usepackage{tikz-cd} % Diagrams
+\usepackage{tikz, pgfplots} % General purpose graphics
+\usepackage{tikz-3dplot}
+\usepackage{enumitem} % Customize lists
+\usetikzlibrary{
+    hobby 
+}
+
+\newcommand{\CO}{\text{CO}_2}
+\newcommand{\SO}{\text{SO}_2}
+\newcommand{\dist}{\text{dist}}
+\newcommand{\Lip}{\text{Lip}_{\text{inj}}}
+
+\begin{document}
+% https://mathoverflow.net/questions/382178/whats-motivic-about-mathbba1-homotopy-theory-whats-motivic-about-corres
+There is no need a priori to define these categories of motives starting from correspondences. The stable homotopy theory of schemes $SH$ may be characterized 
+by a universal property saying $Hom(U,T(X)) \cong Hom(U[\epsilon],X)$ that it is 
+% https://mathoverflow.net/questions/387533/how-should-you-explain-parallel-transport-to-undergraduates
+I want to start with some desirable behaviors, which I allow to be external (i.e, to reference a given embedding of the Riemannian 
+$(x^2+xy-y^2)^3$, $(x^2-xy-y^2)^3$, $2x^6$, $2y^6$ have $h=6$
+but for a stray factor of $2$ which  $$
+C\|f\|^2 \leq \int_{\Delta}|\langle f,\pi(z),g\rangle|^2dz \leq D\|f\|^2,
+$$ should not matter in the context of
+the ABC conjecture.  For example, the pairwise prime numbers
+$a,b,c,d$ below satisfy $2a^6 + b^6 + 61^9 c^6 = 2d^6$.
+
+manifold into $\mathbb{R}^n$), and then say that the only notion of parallel transport that satisfies these conditions must be the Levi–Civita connection. (Any reasonable notion of parallel transport will respect the metric, so I'm really thinking of the torsion-free condition.)
+
+A base case of a desirable condition is that for the Riemannian manifold $\mathbb{R}^n$, parallel transport is the trivial thing. (If one identifies the tangent bundle with $\mathbb{R}^n\times\mathbb{R}^n$ then for any path $\gamma$ the parallel transport of the tangent vector $(\gamma(0),v)$ at $\gamma(0)$ to $\gamma(1)$ via $\gamma$ is the tangent vector $(\gamma(1),v)$ at $\gamma(1)$.)
+
+the universal setting in which one may define the six 
+\begin{equation}
+u_j:=\int_{i=1}^{j-1} w_i, 	
+\end{equation}
+operations; see [Drew and Gallauer][1]. Usually, $$
+C\|f\|^2 \leq \int_{\Delta}|\langle f,\pi(z),g\rangle|^2dz \leq D\|f\|^2,
+$$ if you have a 
+system of coefficients $D$ in which the six operations $$
+C\|f\|^2 \leq \int_{\Delta}|\langle f,\pi(z),g\rangle|^2dz \leq D\|f\|^2,
+$$ are defined, we have in particular: for each morphism of scheme $f:X\to Y$, a pull-back functor 
+$f^*:D(Y)\to D(X)$ with a right $Hom(U,T(X)) \cong Hom(U[\epsilon],X)$ adjoint $f_*$ as well as a push-forward with compact support functor $f_!:D(X)\to D(Y)$ with right adjoint $f^!$ satisfying a 
+bunch of properties, among which we ask for homotopy invariance (i.e. full faithfulness of $f^*$ in the case where $f$ is the structural map of a vector bundle). 
+The universal property of $SH$ means that 
+and 
+\begin{equation}
+u_j:=\sum_{i=1}^{j-1} w_i, 	
+\end{equation}
+so that 
+\begin{equation}
+	u_1=0\le u_2\le\cdots\le u_n\le u_{n+1}=1. 
+\end{equation}
+Suppose that $0<\lambda \le 1/2$. I proved (Theorem 1.1 [here][5]) that $E_2(\phi) \ge 1-2\lambda$, and that equality holds if and only if $$\sigma_1(d\phi)+\sigma_2(d\phi)=1.$$
+
+$(1/\lambda)\cdot \phi$ is a map $D \to D$ having $\sigma_1(d\phi)+\sigma_2(d\phi)=1/\lambda$. 
+
+If we replace $E_2=\dist^2$ with $E_p=\dist^p$ for $p>2$, then the energy minimizers $D \to \lambda D$ satisfy $\sigma_1(d\phi)+\sigma_2(d\phi)=1$ **and** $\sigma_i(d\phi)$ need to be constant.
+
+$SH$ has the six operations and is initial for this, as far as we ask that $D$ takes values in presentable 
+stable $\infty$-categories. $Hom(U,T(X)) \cong Hom(U[\epsilon],X)$ For example, we may take $D(X)=D(Sh(X_{\acute{e}t},\Lambda))$ with $\Lambda$ any ring of positive $\mathbb{D}_p$characteistic invertible 
+$\mathcal{O}_X$. OR we may consider its $\ell$-adic counterpart $D(X,\mathbb{Z}_{\ell}):=D(Sh(X_{\acute{e}t},\mathbb{Z}_{(\ell)}))/D(Sh(X_{\acute{e}t},\mathbb{Q}))$ with $\frac{1}{\ell}\in\mathcal{O}_X$.
+
+%https://mathoverflow.net/questions/238809/is-every-polish-ring-topology-on-mathbbc-defined-by-an-absolute-value
+There is a unique up to isomorphism algebraically closed field of characteristic 0 and cardinality of the continuum. Let's call it $K$. $\mathbb{V}_p$
+We usually call it $\mathbb{C}$, but by this $$
+C\|f\|^2 \leq \int_{\Delta}|\langle f,\pi(z),g\rangle|^2dz \leq D\|f\|^2,
+$$ we impose a topological structure on $K$. In fact there are many other possible ring topologies on $K$ (by a ring topology we mean a topology for which the addition and multiplication are continuous maps $K\times K \to K$).
+There seems to be a 
+adjoint $f_*$ as well as a $\mathbb{C}_p$ push-forward with compact support functor $f_!:D(X)\to D(Y)$ with right adjoint $f^!$ satisfying a 
+bunch of properties, among which we ask for homotopy invariance (i.e. full faithfulness of $f^*$ in the case where $f$ is the structural map of a vector bundle). 
+The universal property of $SH$ means that $SH$ has the six operations and is initial for this, as far as we ask that $D$ takes values in presentable 
+stable $\infty$-categories. For example, we may take $D(X)=D(Sh(X_{\acute{e}t},\Lambda))$ with $\Lambda$ any ring of positive characteistic invertible 
+zoo of those. I care more for $\mathbb{A}_p$ better behaved ones.
+
+It is natural to consider separable topologies (ie admitting a countable dense subset) such that the uniform structure imposed by the additive group structure is complete. In fact, I care mostly for Polish topologies (separable and defined by a complete metric). For these the uniform structure is automatically complete.
+
+A famous Polish topology on $K$ is $\mathbb{C}_p$ which is obtained by completing the algebraic closure of $\mathbb{Q}_p$ with respect to the unique absolute value on it extending the $p$-adic absolute value on $\mathbb{Q}_p$ (absolute value = multiplicative norm). Here is another example: consider $k$, a countable field (eg $\mathbb{Q}$ or its algebraic closure), and take the degree valuation on $k(t)$. Complete to $k((t))$, extend (uniquely) the absolute value to the algebraic closure and complete again (use Krasner's Lemma). Get a Polish topology on $K$ for which $k$ is discrete.
+
+All the examples of topologies on $K$ above, and all the examples I am aware of
+are defined by absolute values. 
+A famous Polish topology on $K$ is $\mathbb{C}_p$ which is obtained by completing the algebraic closure of $\mathbb{Q}_p$ with respect to the unique absolute value on it extending the $p$-adic absolute value on $\mathbb{Q}_p$ (absolute value = multiplicative norm). Here is another example: consider $k$, a countable field (eg $\mathbb{Q}$ or its algebraic closure), and take the degree valuation on $k(t)$. Complete to $k((t))$, extend (uniquely) the absolute value to the algebraic closure and complete again (use Krasner's Lemma). Get a Polish topology on $K$ for which $k$ is discrete.
+Hence the question in the title: Is every Polish ring topology on $\mathbb{C}$ defined by an absolute value?
+
+% https://mathoverflow.net/questions/389192/dirichlet-region-of-a-free-group
+Let $G$ be a non-uniform lattice Fuchsian group and let $P$ be a Dirichlet region for $G$. In particular $G$ has parabolic elements, $P$ is not compact and has finite area. We are in the unit disc. Is the following statement true? Is the proof correct? Errors? Counterexamples? Thanks.
+
+% https://mathoverflow.net/questions/389132/proof-of-tennenbaums-theorem-by-mccarty
+Tennenbaum's Theorem in its usual form states that for any countable non-standard model $M$ of PA there is no way to code the elements of $M$ as natural numbers such that either the addition or multiplication operation of the model is a computable function on the codes.
+
+% https://mathoverflow.net/questions/331764/is-the-minmod-limiter-energy-stable
+It is well-known, that upwind scheme and Lax-Wendroff scheme are energy stable for the linear advection equation $u_t +a u_x = 0$ with periodic boundary conditions, if the CFL condition is satisfied, that is the schemes never raise the L2-norm.
+In formulae: Given a state $u(t)=(u_{i,t})_{i \in I}$ at timestep $t \in \mathbb{N}$, we have
+
+% https://mathoverflow.net/questions/385732/proofs-of-theorems-that-proved-more-or-deeper-results-than-what-was-first-suppos
+Recently, I figured out that a colleague of $$(\iota \otimes \Delta)(x \otimes 1) (\iota \otimes \Delta)(a \otimes b)(c \otimes d \otimes e) = (\iota \otimes \Delta)(xa \otimes b)(c\otimes d \otimes e)$$
+$$= xac \otimes \Delta(b)(d \otimes e)$$  mine has had published during recent years a proof of a theorem in which he was actually proving a deeper result which we both thought to be still open. After a closer look at his proof I found that, taking a bit more care and putting some additional emphasis in certain parts of his previous proof, he was actually proving the other still-thought-to-be-open problem: the construction was absolutely the same and therefore the proof of the previously published theorem was certainly a better argument than we first thought. I am curious now about this phenomenon happening more often. Do you know some other recent (let's say from 1700 to the current day) examples of this phenomenon of proofs being stronger than initially stated or proving more than thought at first?
+
+% https://mathoverflow.net/questions/386894/top-down-mathematics-or-where-it-all-begins
+In strict formalism, the symbols do not mean  For example, we may take $D(X)=D(Sh(X_{\acute{e}t},\Lambda))$ with $\Lambda$ any ring of positive characteistic invertible 
+zoo of those. I care more for better $Hom(U,T(X)) \cong Hom(U[\epsilon],X)$ behaved ones. anything.  It is assumed that you have the capability of verifying that if you start with certain strings and apply certain rules then you will arrive at a certain result.  But there is no assumption that you are able to reason mathematically. For example, consider the rule append a 0 and consider applying that rule some finite number of times to the string 0. As a strict formalist, you will be able to confirm that at some point, the string 0000 will emerge.  However, consider the following claim: At no point will this process ever produce a string with the symbol 1 in it.  While this claim may seem ridiculously obvious, it is not a claim that a strict formalist can deduce.  Arriving at such a conclusion requires reasoning about symbols, and a strict formalist is assumed only to be able to carry out symbolic manipulations, not to be able to reason about them.
+
+A strict formalist can verify any formal proof produced by a mathematician, and so in that sense can reproduce all the formal content of mathematics, no matter how arcane an axiom is invoked.  But a strict formalist will not, for example, be able to tell us something like this: If you write a computer program to search for strictly positive integers $a$ and $b$ such that $a^2 = 2b^2$, then the program will never halt.  The strict formalist will be able to execute such a computer program, and can even verify a formal proof that $\sqrt{2}$ is irrational, but as far as the strict formalist is concerned, the formal proof that $\sqrt{2}$ is irrational is simply a meaningless sequence of symbolic manipulations, and tells us nothing about reality.
+
+If you want to recover the ability to claim with confidence that computer programs that search for positive integer solutions to $a^2 = 2b^2$ are doomed to fail, then you need to take an additional step beyond strict formalism.  Namely, you need to claim that there is such a thing as sound mathematical reasoning, and you need to lay down the principles that you think are trustworthy.  At this point, it's basically up to you to decide what principles you trust. Most mathematicians seem to be happy with ZFC, but others are uneasy with it and prefer to back off to some set of more modest principles. For almost every mathematician $M$, it is possible to write down a set of formal axioms with the property that anything the strict formalist deduces from those axioms will be accepted by $M$ as a true mathematical statement.  So again, in that sense, the strict formalist can reproduce all of mathematics.  But the set of formal axioms accepted by $M$ will vary as $M$ varies.
+
+\end{document}
+
+
